@@ -6,7 +6,6 @@ import cloudinary from "cloudinary";
 import { Stats } from "../models/Stats.js";
 
 export const getAllCourses = catchAsyncError(async (req, res, next) => {
-  res.send("working");
   const keyword = req.query.keyword || "";
   const category = req.query.category || "";
 
